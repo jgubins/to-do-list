@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>todolist</title>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800italic,800,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<h1 class="main-title">todos</h1>
+<div class="whole-list-container">
+
+	<header>
+		<div class="input-item">
+			<input class="header-input-field" type="text" name="input" placeholder="What needs to be done?">
+		</div>
+	</header>
+	<section>
+
+		<div class="list-item">
+			<div class="checkbox-container">
+					<input type="checkbox" id="ch1" class="item-checkbox">	
+					<div class="checkbox-ring">
+						<label for="ch1"><span><i class="fa fa-check checkbox-v" aria-hidden="true"></i></span></label>
+						</div>
+			</div>
+			<div class="item-content-container">
+				<div class="editable-paragraph-container">
+					<p class="editable-paragraph" contenteditable="true">... Tests tests tests ...</p>
+				</div>
+				<div class="cross"></div>
+			</div>
+		</div>
+	
+	</section>
+
+
+
+
+	<footer>
+	
+		<div class="footer-container">
+			<div class="items-left-container">
+				<label class="items-left-label">X items left</label>
+			</div>
+			<div class="middle-buttons-container">
+				<button class="footer-button">All</button>
+				<button class="footer-button">Active</button>
+				<button class="footer-button">Completed</button>
+			</div>
+			<div class="clear-completed-container">
+				<button class="footer-button">Clear completed</button>
+			</div>
+		</div>
+	</footer>
+
+
+</div>
+
+</body>
+</html>
