@@ -59,29 +59,30 @@ body{
 	margin-bottom: auto;
 	margin-left: 10px;
 }
-.checkbox-ring{
+
+.checkbox-label{
 	width: 30px;
 	height: 30px;
-	border:1px solid lightgray;
+	border: 1px solid lightgray;
 	border-radius: 50%;
+	display: inline-block;
 }
-
-
 input[type=checkbox] {
   	display: none;
 }
-input[type=checkbox]:checked + label:after {
+input[type=checkbox]:checked + .checkbox-label:after {
   	content: "\2713";
   	font-size: 28px;
   	color: #5ac2b0;
   	position: relative; 
 }
-label:after{
+.checkbox-label:after{
 	content: "";
 	position: absolute;
-	top: -35px;
+	top: -8px;
 	left: 5px;
 }
+
 /*input[type=checkbox]:checked .editable-paragraph {
 	text-decoration: line-through;
 }*/
@@ -105,10 +106,11 @@ label:after{
 	margin: 0;
 	padding: 15px 0;
 	word-wrap: break-word;
+	border: 1px solid transparent;
 }
 
 .editable-paragraph:focus {
-	border: 1px solid yellow;
+	border: 1px solid #999999;
 }
 .cross{
 	width: 10%;
